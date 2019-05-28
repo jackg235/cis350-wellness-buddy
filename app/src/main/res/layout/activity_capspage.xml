@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CAPSPage">
+
+    <Button
+        android:id="@+id/griefreferrals"
+        android:layout_width="313dp"
+        android:layout_height="124dp"
+        android:text="Grief Referrals: Penn Students of AMF"
+        app:layout_constraintBottom_toTopOf="@+id/sexassault"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <Button
+        android:id="@+id/sexassault"
+        android:layout_width="313dp"
+        android:layout_height="124dp"
+        android:text="Penn Sexual Assault Response Center"
+        app:layout_constraintBottom_toTopOf="@+id/pennwomens"
+        app:layout_constraintTop_toBottomOf="@+id/griefreferrals"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <Button
+        android:id="@+id/pennwomens"
+        android:layout_width="313dp"
+        android:layout_height="124dp"
+        android:text="Penn Women's Center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sexassault"
+        tools:layout_editor_absoluteX="49dp" />
+
+</android.support.constraint.ConstraintLayout>
