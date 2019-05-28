@@ -1,4 +1,4 @@
-# WELLNESS BUDDY 🐶✨
+# WELLNESS BUDDY 
 A personalized user-friendly app for connecting students and wellness resources at The University of Pennsylvania, using data stored in a database, and a web app for an administrator.
 
 ### Motivation
