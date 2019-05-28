@@ -1,0 +1,24 @@
+<form action="/update" method="post">
+<p>
+<b>Name:</b> <%= person.name %>
+<input name='name' value='<%= person.name %>' hidden>
+<br>
+<b>Account Number:</b> <input name='accountNum' value='<%= person.accountNum %>'>
+<br>
+<b>Username:</b> <input name = 'username' value = '<%= person.username %>'>
+<br>
+<b>Password: </b> <input name = 'password' value = '<%= person.password %>'>
+<br>
+<b>Mental health score:</b> <input name = 'mentalHealth' value = '<%= person.mentalHealth %>'>
+<br>
+<b>Stress score:</b> <input name = 'stress' value = '<%= person.stress %>'>
+<br>
+<b>Physical health score:</b> <input name = 'physicalHealth' value = '<%= person.physicalHealth %>'>
+<br>
+<b>Community:</b> <input name = 'community' value = '<%= person.community %>'>
+<p>
+<input type = 'submit' value = 'Update'>
+</form>
+<a href="/">Create New Person</a>
+<p>
+<a href="/all">Show All</a>

@@ -1,0 +1,19 @@
+Here are all the resources:
+<ul>
+<% persons.forEach( (person) => { %>
+
+<li> Name: <a href="/person?name=<%= person.name %>">   
+       <%= person.name %></a>
+  <ul> Address: <%= person.address %></ul>
+  <ul> Category: <%= person.category %></ul>
+  <ul> Summary: <%= person.summary %></ul>
+  <ul> Latitude: <%= person.lat %></ul>
+  <ul> Longitude: <%= person.lon %></ul>
+  <ul> Phone: <%= person.phonenumber %></ul>
+  <ul> Spotify: <%= person.isSpotify %></ul>
+</li>
+
+<% }); %>
+</ul>
+<br><a href="/">Create New Resource</a>
+<br><a href="/public/delete.html">Delete A Resource</a>

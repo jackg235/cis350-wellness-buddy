@@ -1,0 +1,26 @@
+<form action="/update" method="post">
+<p>
+<b>Name:</b> <%= person.name %>
+<input name='name' value='<%= person.name %>' hidden>
+<br>
+<b>Summary:</b> <input name='summary' value='<%= person.summary %>'>
+<br>
+<b>Category:</b> <input name = 'category' value = '<%= person.category %>'>
+<br>
+<b>Address: </b> <input name = 'address' value = '<%= person.address %>'>
+<br>
+<b>Website:</b> <input name = 'website' value = '<%= person.website %>'>
+<br>
+<b>Latitude:</b> <input name = 'lat' value = '<%= person.lat %>'>
+<br>
+<b>Longitude:</b> <input name = 'lon' value = '<%= person.lon %>'>
+<br>
+<b>Phone:</b> <input name = 'phonenumber' value = '<%= person.phonenumber %>'>
+<br>
+<b>Spotify:</b> <input name = 'isSpotify' value = '<%= person.isSpotify %>'>
+<p>
+<input type = 'submit' value = 'Update'>
+</form>
+<a href="/">Create New Resource</a>
+<p>
+<a href="/all">Show All</a>

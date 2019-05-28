@@ -1,0 +1,15 @@
+Here are all the people:
+<ul>
+<% persons.forEach( (person) => { %>
+
+<li> Name: <a href="/person?username=<%= person.username %>">   
+       <%= person.name %></a>
+  <ul> Username: <%= person.username %></ul>
+  <ul> Password: <%= person.password %></ul>
+  <ul> Account number: <%= person.accountNum %></ul>
+</li>
+
+<% }); %>
+</ul>
+<br><a href="/">Create New Person</a>
+<br><a href="/public/delete.html">Delete A Person</a>
